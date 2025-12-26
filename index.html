@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>QReator — AI QR Generator</title>
+    <meta name="description" content="Gerador de QR Code com templates e apoio por IA." />
+
+    <!-- Theme / PWA-ish basics -->
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- Social preview (opcional, mas profissional) -->
+    <meta property="og:title" content="QReator — AI QR Generator" />
+    <meta property="og:description" content="Gerador de QR Code com templates e apoio por IA." />
+    <meta property="og:type" content="website" />
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- Font (pode manter, mas para OFFLINE o ideal é instalar localmente) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #0f172a;
+        --fg: #f8fafc;
+      }
+      html, body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+      }
+      /* Loader simples enquanto o bundle carrega */
+      #boot {
+        height: 100%;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      .boot-card {
+        max-width: 520px;
+        width: 100%;
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 16px;
+        padding: 20px 18px;
+        background: rgba(2, 6, 23, 0.35);
+      }
+      .boot-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 0 8px 0;
+      }
+      .boot-sub {
+        font-size: 13px;
+        opacity: 0.85;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="boot">
+        <div class="boot-card">
+          <p class="boot-title">A iniciar o QReator…</p>
+          <p class="boot-sub">A carregar a interface do gerador de QR Code.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Entry point do Vite (ajuste para o seu ficheiro real) -->
+    <script type="module" src="index.tsx"></script>
+  </body>
+</html>
